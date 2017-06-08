@@ -40,7 +40,7 @@ An Administrator can create a new blog article with fields including **Title, Bo
   remember_token     | body
    created_at    | published_at - datetime
 updated_at | created_at
-           | updated_at
+   -        | updated_at
 
 ###Todo List:
 
