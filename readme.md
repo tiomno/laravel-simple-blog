@@ -7,45 +7,53 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## Mission: Create a simple blog system in Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+###You will need the following:
+1. Git Installed & GitHub Account
+2. Homestead / Valet / Vagrant or MAMP to run Laravel
+3. IDE (PHPStorm) or Text Editor (i.e. Sublime Text)
+4. Terminal or Command Line
+5. MySQL Database or SQLite Database
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+###Estimated Completion Time: Within 2 Hours
+Let’s Begin:
+1. Please start a fresh 5.x Laravel project
+2. Utilise Twitter Bootstrap (CSS & JS)
+3. Please create the following functionality for a client:
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+An **Administrator** may view all existing blog posts **or see a message that no blogs are available**. A logged out user should be able to see all Active blog posts available.
 
-## Learning Laravel
+The list of **Active** blogs should show it’s **Title, Excerpt Body, Published Time & Author’s Name.** Upon clicking the blogs **Title**, it should present the full blog article showing **Title, Full Body, Published Time, Author’s Name**.
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+An Administrator can create a new blog article with fields including **Title, Body** and **Active Status**. An Administrator can edit an existing blog and be able to update it’s **Title, Body** and **Active Status**.
 
-## Laravel Sponsors
+###Example Schema:
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+ User (default Laravel user migration)        |    Post or Blog (Your choice or naming)
+ ------------- | ------------- 
+ id      | id  
+ name     | user_id - foreign key       
+ email | active - boolean
+   password    | title
+  remember_token     | body
+   created_at    | published_at - datetime
+updated_at | created_at
+           | updated_at
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- **[Codecourse](https://www.codecourse.com)**
-- [Fragrantica](https://www.fragrantica.com)
+###Todo List:
 
-## Contributing
+1. Creation Migrations & fill in Schema
+2. Create Models with correct relationships & fillable fields
+3. Create Controller with required methods
+4. Create FormRequests for controller validation methods
+5. Create required views for Index, Create, Edit, Show
+6. Commit your code to GIT and upload to GitHub to share your work
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+###Extras (not required, but advantageous)
 
-## Security Vulnerabilities
+1. Delete a blog post
+2. Seeder / Factory Setup
+3. Basic Testing for main pages and database look-ups
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
