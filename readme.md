@@ -9,18 +9,11 @@
 
 ## Mission: Create a simple blog system in Laravel
 
-### You will need the following:
-1. Git Installed & GitHub Account
-2. Homestead / Valet / Vagrant or MAMP to run Laravel
-3. IDE (PHPStorm) or Text Editor (i.e. Sublime Text)
-4. Terminal or Command Line
-5. MySQL Database or SQLite Database
-
 ### Estimated Completion Time: Within 2 Hours
 Let’s Begin:
-1. Please start a fresh 5.x Laravel project
+1. Start a fresh 5.x Laravel project
 2. Utilise Twitter Bootstrap (CSS & JS)
-3. Please create the following functionality for a client:
+3. Create the following functionality for a client:
 
 An **Administrator** may view all existing blog posts **or see a message that no blogs are available**. A logged out user should be able to see all Active blog posts available.
 
@@ -31,7 +24,7 @@ An Administrator can create a new blog article with fields including **Title, Bo
 
 ### Example Schema:
 
- User (default Laravel user migration) | Post or Blog (Your choice or naming)
+ User (default Laravel user migration) | Posts
  -------------- | ------------- 
  id             | id  
  name           | user_id - foreign key       
@@ -44,15 +37,9 @@ An Administrator can create a new blog article with fields including **Title, Bo
 
 ### Todo List:
 
-1. Creation Migrations & fill in Schema
+1. Create Migrations & fill in Schema
 2. Create Models with correct relationships & fillable fields
 3. Create Controller with required methods
 4. Create FormRequests for controller validation methods
 5. Create required views for Index, Create, Edit, Show
-6. Commit your code to GIT and upload to GitHub to share your work
-
-### Extras (not required, but advantageous)
-
-1. Delete a blog post
-2. Seeder / Factory Setup
-3. Basic Testing for main pages and database look-ups
+6. Delete a blog post
